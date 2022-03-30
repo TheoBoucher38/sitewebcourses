@@ -1,0 +1,46 @@
+main {
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: red;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contentMasked {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  display: none;
+}
+
+p {
+  margin: 0;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .contentMasked {
+    display: initial;
+  }
+
+  .container {
+      flex-direction: row;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
